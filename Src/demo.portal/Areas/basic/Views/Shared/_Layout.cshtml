@@ -7,6 +7,8 @@
         <title>@Html.Sitecore().Field("title", new { DisableWebEdit = true })</title>
         @* @Html.Sitecore().VisitorIdentification() *@
 
+    <link href="~/Areas/basic/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Areas/basic/Content/Site.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -21,20 +23,24 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
                 </ul>
             </div>
         </div>
+        
     </div>
-    <h1>@Html.Sitecore().Field("title")</h1>
     <div class="container body-content">
+        <h1>@Html.Sitecore().Field("title")</h1>
+
         @Html.Sitecore().Placeholder("main")
+
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            <p>&copy; @DateTime.Now.Year - My Sitecore ASP.NET MVC Application</p>
         </footer>
     </div>
 </body>
+
 </html>
