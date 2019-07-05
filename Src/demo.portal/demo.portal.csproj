@@ -205,10 +205,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\RazorGeneratorMvcStart.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\basic\Controllers\HomeController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -241,7 +237,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Areas\basic\Views\Web.config" />
-    <Content Include="Areas\basic\Views\_ViewStart.cshtml" />
     <Content Include="Areas\basic\Views\Shared\Error.cshtml" />
     <Content Include="Areas\basic\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\basic\Views\Home\About.cshtml" />
@@ -251,6 +246,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="App_Start\" />
     <Folder Include="Areas\basic\Models\" />
   </ItemGroup>
   <ItemGroup>
